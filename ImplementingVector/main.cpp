@@ -84,7 +84,7 @@ public:
         if( newalloc <= space )
             return ;
         
-        double *p =  new double[ newalloc];
+        T *p =  new double[ newalloc];
         // we are not initializing the elements in the reserved space
         copy( elem, elem+ sz, p);
         delete [] elem;
